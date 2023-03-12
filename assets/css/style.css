@@ -70,6 +70,48 @@
     --bs-highlight-bg: #fff3cd;
 }
 
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Thin.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Heavy.otf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Bakerie';
+    src: url('../fonts/bakerie/BakerieRough-Black.otf');
+    font-weight: 900;
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -250,17 +292,27 @@ a {
 }
 
 .sidebar .sidebar-header .sidebar-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar .sidebar-header .sidebar-title img {
+    width: 50px;
+}
+
+.sidebar .sidebar-header .sidebar-title h2 {
+    font-family: 'Bakerie';
     font-size: 24px;
     font-weight: 600;
-    color: var(--bs-ocean);
+    color: var(--bs-code-color);
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-top: 5px;
 }
 
 .sidebar.collapsed .sidebar-header .sidebar-title {
     display: none;
-}
-
-.sidebar .sidebar-header .sidebar-title span {
-    font-weight: 300;
 }
 
 .sidebar .sidebar-header .sidebar-toggle {
