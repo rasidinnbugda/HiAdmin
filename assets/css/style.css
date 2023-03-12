@@ -768,6 +768,64 @@ a {
     animation: getDropdown .3s ease;
 }
 
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown {
+    max-width: auto;
+    min-width: 600px;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body {
+    padding: 10px;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item:hover {
+    background-color: var(--bs-gray-200);
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item .img-box {
+    width: 40px;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item .img-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item .content {
+    margin-left: 5px;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item .content h3 {
+    font-size: 14px;
+    color: var(--bs-gray-700);
+    margin-bottom: 0;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item .content p {
+    font-size: 12px;
+    color: var(--bs-gray-600);
+    margin-bottom: 0;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .wallpaper-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .wallpaper-box .wallpaper-img {
+    width: 100%;
+    border-radius: 2px;
+}
+
 .navbar .nav-content .navbar-menu .nav-item .dropdown-menu.l-dropdown {
     right: -5px;
     left: auto;
