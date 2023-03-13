@@ -571,6 +571,15 @@ a {
     color: var(--bs-code-color);
 }
 
+.sidebar .sidebar-body .sidebar-menu .sidebar-menu-item.active > .nav-link .item-icon,
+.sidebar .sidebar-body .sidebar-menu .sidebar-menu-item.focused > .nav-link .item-icon {
+    fill: rgb(149 56 158 / 30%);
+}
+
+.sidebar .sidebar-body .sidebar-menu .sidebar-menu-item > .nav-link:hover .item-icon {
+    fill: rgb(149 56 158 / 30%);
+}
+
 .sidebar .sidebar-body .sidebar-menu .sub-menu {
     padding: 0;
     padding-left: 8px;
@@ -598,10 +607,10 @@ a {
     position: absolute;
     width: 8px;
     height: 8px;
-    transform: translateX(-33px);
+    transform: translateX(-33px) rotateZ(45deg);
     background-color: var(--bs-white);
     border: 2px solid var(--bs-gray-500);
-    border-radius: 50%;
+    border-radius: 2px;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -616,6 +625,7 @@ a {
 .sidebar .sidebar-body .sidebar-menu .sub-menu .sub-menu-item.active > .nav-link::before,
 .sidebar .sidebar-body .sidebar-menu .sub-menu .sub-menu-item.focused > .nav-link::before {
     border: 2px solid var(--bs-code-color);
+    background-color: var(--bs-code-color);
 }
 
 .sidebar .sidebar-body .sidebar-menu .sub-menu .sub-menu {
@@ -701,6 +711,52 @@ a {
     width: 20px;
     height: 20px;
 }
+
+.navbar .nav-content .navbar-menu .nav-item .nav-link .pulse {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--bs-teal);
+    border-radius: 50%;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .nav-link .pulse::before,
+.navbar .nav-content .navbar-menu .nav-item .nav-link .pulse::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--bs-teal);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .nav-link .pulse::before {
+    animation: pulse 2s ease-out infinite;
+}
+
+.navbar .nav-content .navbar-menu .nav-item .nav-link .pulse::after {
+    animation: pulse 2s 1s ease-out infinite;
+}
+
+@-webkit-keyframes pulse {
+    100% {
+        transform: scale(2.8);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
 
 .navbar .nav-content .navbar-menu .nav-item .nav-link .nav-image {
     width: 40px;
