@@ -505,6 +505,8 @@ a {
     position: absolute;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
+    fill: rgb(149 56 158 / 30%);
+    fill-opacity: 0;
 }
 
 .sidebar .sidebar-body .sidebar-menu .sidebar-menu-item .nav-link .item-text {
@@ -573,11 +575,11 @@ a {
 
 .sidebar .sidebar-body .sidebar-menu .sidebar-menu-item.active > .nav-link .item-icon,
 .sidebar .sidebar-body .sidebar-menu .sidebar-menu-item.focused > .nav-link .item-icon {
-    fill: rgb(149 56 158 / 30%);
+    fill-opacity: 1;
 }
 
 .sidebar .sidebar-body .sidebar-menu .sidebar-menu-item > .nav-link:hover .item-icon {
-    fill: rgb(149 56 158 / 30%);
+    fill-opacity: 1;
 }
 
 .sidebar .sidebar-body .sidebar-menu .sub-menu {
@@ -625,7 +627,7 @@ a {
 .sidebar .sidebar-body .sidebar-menu .sub-menu .sub-menu-item.active > .nav-link::before,
 .sidebar .sidebar-body .sidebar-menu .sub-menu .sub-menu-item.focused > .nav-link::before {
     border: 2px solid var(--bs-code-color);
-    background-color: var(--bs-code-color);
+    background: #dfc3e2;
 }
 
 .sidebar .sidebar-body .sidebar-menu .sub-menu .sub-menu {
@@ -843,7 +845,7 @@ a {
 }
 
 .navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item:hover {
-    background-color: var(--bs-gray-200);
+    background-color: #dfc3e2;
 }
 
 .navbar .nav-content .navbar-menu .nav-item .dropdown-menu.ultimate-dropdown .ultimate-dropdown-body .ultimate-dropdown-item .img-box {
@@ -1017,6 +1019,44 @@ a {
 
 .navbar .nav-content .navbar-menu .nav-item .dropdown-menu .drop-bottom:hover {
     background-color: var(--bs-body-bg);
+}
+
+/* Main */
+.main-container {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.main-container .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container .page-header .page-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--bs-gray-800);
+    margin-bottom: 0;
+}
+
+.main-container .page-header .breadcrumb {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.main-container .page-header .breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    color: var(--bs-gray-600);
+    transition: .3s all;
+}
+
+.main-container .page-header .breadcrumb .breadcrumb-item a:hover {
+    color: var(--bs-code-color);
+}
+
+.main-container .page-header .breadcrumb .breadcrumb-item.active a {
+    color: var(--bs-code-color);
 }
 
 /* Media */
