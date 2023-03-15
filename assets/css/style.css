@@ -496,6 +496,7 @@ a {
     padding: 0;
     color: var(--bs-gray-800);
     height: 32px;
+    cursor: pointer;
 }
 
 .sidebar .sidebar-body .sidebar-menu .sidebar-menu-item .nav-link .item-icon {
@@ -702,6 +703,7 @@ a {
     font-size: 14px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    cursor: pointer;
 }
 
 .navbar .nav-content .navbar-menu .nav-item .nav-link:hover,
