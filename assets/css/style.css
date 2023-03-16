@@ -308,7 +308,7 @@ a {
     color: var(--bs-code-color);
     margin-bottom: 0;
     margin-left: 8px;
-    margin-top: 5px;
+    line-height: 1;
 }
 
 .sidebar.collapsed .sidebar-header .sidebar-title {
@@ -1190,6 +1190,31 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.card .card-body .progress-bar-title .feather-icon {
+    color: var(--bs-code-color);
+    fill: rgb(149 56 158 / 30%);
+    width: 28px;
+}
+
+.card .card-body .progress-bar-title h3 {
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.link-button {
+    color: var(--bs-code-color);
+    padding: 2px 5px;
+    border-radius: 2px;
+    transition: .3s all;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+    color: var(--bs-code-color);
 }
 
 /* Media */
