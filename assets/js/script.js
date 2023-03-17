@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
         progress_text.forEach((text) => {
         let data = text.getAttribute('data-value');
-        text.innerText = `${data}%`;
+        text.innerText = `${data}`;
     });
     // End: Circle Progress Bar
 
