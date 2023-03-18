@@ -1082,7 +1082,7 @@ a {
 }
 
 .card .card-body {
-    padding: 12px 16px;
+    padding: 16px;
     font-size: 13px;
     color: var(--bs-gray-600);
 }
@@ -1219,9 +1219,14 @@ a {
     color: var(--bs-code-color);
 }
 
-.table.table-bordered {
-    border-radius:5px;
-    border: 1px solid #e6e9ec;
+.table thead th {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--bs-gray-800);
+}
+
+.table tbody td {
+    color: var(--bs-gray-700);
 }
 
 /* Media */
