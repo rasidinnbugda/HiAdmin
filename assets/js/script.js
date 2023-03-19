@@ -33,6 +33,8 @@ $(document).ready(function() {
         }
     }
 
+    assignClassBasedOnWidth();
+
     window.onload = assignClassBasedOnWidth;
     window.onresize = assignClassBasedOnWidth;
     // End: Sidebar
