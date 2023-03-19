@@ -1218,6 +1218,10 @@ a {
     color: var(--bs-gray-800);
 }
 
+.table thead th.th-2 {
+    width: 150px;
+}
+
 .table tbody td {
     color: var(--bs-gray-700);
 }
