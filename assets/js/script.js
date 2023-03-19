@@ -20,6 +20,21 @@ $(document).ready(function() {
             $('.sidebar.collapsed .sub-menu').slideUp('fast')
         })
     })
+
+    const widthThreshold = 991;
+
+    function assignClassBasedOnWidth() {
+        if (window.innerWidth < widthThreshold) {
+            $('.sidebar').addClass('collapsed');
+            $('.page-wrapper').addClass('collapsed')
+        } else {
+            $('.sidebar').removeClass('collapsed');
+            $('.page-wrapper').removeClass('collapsed')
+        }
+    }
+
+    window.onload = assignClassBasedOnWidth;
+    window.onresize = assignClassBasedOnWidth;
     // End: Sidebar
 
     // Start: Circle Progress Bar
